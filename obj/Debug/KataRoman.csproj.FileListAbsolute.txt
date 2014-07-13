@@ -1,0 +1,5 @@
+c:\users\julien\documents\visual studio 2013\Projects\KataRoman\KataRoman\bin\Debug\KataRoman.dll
+c:\users\julien\documents\visual studio 2013\Projects\KataRoman\KataRoman\bin\Debug\KataRoman.pdb
+c:\users\julien\documents\visual studio 2013\Projects\KataRoman\KataRoman\obj\Debug\KataRoman.csprojResolveAssemblyReference.cache
+c:\users\julien\documents\visual studio 2013\Projects\KataRoman\KataRoman\obj\Debug\KataRoman.dll
+c:\users\julien\documents\visual studio 2013\Projects\KataRoman\KataRoman\obj\Debug\KataRoman.pdb
