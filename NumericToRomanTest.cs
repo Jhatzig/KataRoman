@@ -42,17 +42,37 @@ namespace KataRoman
         /// Permet de tester la conversion des chiffres numériques vers les chiffres romains.
         /// </summary>
         [TestMethod]
-        public void NumToRomanTest()
+        public void NumToRoman1ToI_Test()
         {
             var output = kr.NumToRoman(1);
             Assert.AreEqual("I", output);
-            output = kr.NumToRoman(5);
+        }
+
+        [TestMethod]
+        public void NumToRoman5toV_Test()
+        {
+            var output = kr.NumToRoman(5);
             Assert.AreEqual("V", output);
-            output = kr.NumToRoman(10);
+        }
+
+        [TestMethod]
+        public void NumToRoman10toX_Test()
+        {
+            var output = kr.NumToRoman(10);
             Assert.AreEqual("X", output);
-            output = kr.NumToRoman(4);
+        }
+
+        [TestMethod]
+        public void NumToRoman4toIV_Test()
+        {
+            var output = kr.NumToRoman(4);
             Assert.AreEqual("IV", output);
-            output = kr.NumToRoman(199);
+        }
+
+        [TestMethod]
+        public void NumToRoman199toCXCIX_Test()
+        {
+            var output = kr.NumToRoman(199);
             Assert.AreEqual("CXCIX", output);
         }
 
@@ -60,22 +80,45 @@ namespace KataRoman
         /// Permet de tester la convertion des chiffres romains en numérique.
         /// </summary>
         [TestMethod]
-        public void RomanToNumTest()
+        public void RomanToNumTestITo1()
         {
             var output = kr.RomanToNum("I");
             Assert.AreEqual("1", output);
-            output = kr.RomanToNum("VIII");
-            Assert.AreEqual("8", output);
-            output = kr.RomanToNum("III");
-            Assert.AreEqual("3", output);
-            output = kr.RomanToNum("XII");
-            Assert.AreEqual("12", output);
-            output = kr.RomanToNum("IV");
-            Assert.AreEqual("4", output);
-            output = kr.RomanToNum("CXCIX");
-            Assert.AreEqual("199", output);
         }
 
+        [TestMethod]
+        public void RomanToNumTestVIIITo8()
+        {
+            var output = kr.RomanToNum("VIII");
+            Assert.AreEqual("8", output);
+        }
+
+        [TestMethod]
+        public void RomanToNumTestIIITo3()
+        {
+            var output = kr.RomanToNum("III");
+            Assert.AreEqual("3", output);
+        }
+
+        [TestMethod]
+        public void RomanToNumTestXIITo12()
+        {
+            var output = kr.RomanToNum("XII");
+            Assert.AreEqual("12", output);
+        }
+        [TestMethod]
+        public void RomanToNumTest4ToIV()
+        {
+            var output = kr.RomanToNum("IV");
+            Assert.AreEqual("4", output);
+        }
+
+        [TestMethod]
+        public void RomanToNumTestCXCIXTo199()
+        {
+            var output = kr.RomanToNum("CXCIX");
+            Assert.AreEqual("199", output);
+        }
 
         [TestMethod]
         public void NumericOrRomanTest()

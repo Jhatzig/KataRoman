@@ -100,12 +100,10 @@ namespace KataRoman
             string result = string.Empty;
             if (nb == 0)
             {
-                result = string.Empty;
+                return string.Empty;
             }
-            else
+            while (nb > 0)
             {
-                while (nb > 0)
-                {
                     foreach (var item in dicto)
                     {
                         if (nb != 0)
@@ -126,7 +124,6 @@ namespace KataRoman
                         }
                     }
                 }
-            }
             return result;
         }
     }
